@@ -15,8 +15,8 @@ opt.on('--white') { color_white = 'white' }
 
 args = opt.parse!(ARGV)
 color = color_yellow || color_white
-
+p [:color, color]
 args.each do |arg|
-  puts SlackAlphabetter.convert(arg)
+  puts SlackAlphabetter.convert(arg, color)
 end
 
