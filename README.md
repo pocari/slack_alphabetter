@@ -22,7 +22,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Specify the string to be converted as the argument of the slack_alphabetter command and execute it.
+
+```
+% slack_alphabetter "hello world"
+:alphabet-white-h::alphabet-white-e::alphabet-white-l::alphabet-white-l::alphabet-white-o:    :alphabet-white-w::alphabet-white-o::alphabet-white-r::alphabet-white-l::alphabet-white-d:
+```
+
+Then, copy and paste the output into slack. The result will be a nice Emoji.
+
+<img width="350" alt="スクリーンショット 2020-12-14 13 22 18" src="https://user-images.githubusercontent.com/1496543/102040193-667f9180-3e0f-11eb-9606-6a58d4e82712.png">
+
+
+If you want yellow text, specify it with the `--yellow` option.
+
+```
+% slack_alphabetter --yellow "hello world"
+:alphabet-yellow-h::alphabet-yellow-e::alphabet-yellow-l::alphabet-yellow-l::alphabet-yellow-o:    :alphabet-yellow-w::alphabet-yellow-o::alphabet-yellow-r::alphabet-yellow-l::alphabet-yellow-d:
+```
+
+<img width="313" alt="スクリーンショット 2020-12-14 13 26 52" src="https://user-images.githubusercontent.com/1496543/102040396-09d0a680-3e10-11eb-8073-9b19d619ab29.png">
+
 
 ## Development
 
