@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+require 'slack_alphabetter'
+
+
+opt = OptionParser.new
+
+color_yellow = nil
+color_white = 'white'
+opt.on('--yellow') { color_yellow = 'yellow' }
+opt.on('--white') { color_white = 'white' }
+
+args = opt.parse!(ARGV)
+color = color_yellow || color_white
+
+args.each do |arg|
+  puts SlackAlphabetter.convert(arg)
+end
+
