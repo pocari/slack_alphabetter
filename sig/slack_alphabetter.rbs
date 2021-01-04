@@ -1,0 +1,7 @@
+# Classes
+module SlackAlphabetter
+  def emoji: (String char, ?String color) -> String
+  def self.emoji: (String char, ?String color) -> String
+  def convert: (String str, ?String color) -> String
+  def self.convert: (String str, ?String color) -> String
+end
